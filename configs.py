@@ -6,14 +6,14 @@ import heroku3
 
 class Config(object):
     # Get This From @TeleORG_Bot
-    API_ID = int(os.environ.get("26556200"))
-    API_HASH = os.environ.get("3917b963bcc9a867097c4811af6ab39d")
+    API_ID = int(os.environ.get("API_ID"))
+    API_HASH = os.environ.get("API_HASH")
     # Get This From @StringSessionGen_Bot
-    STRING_SESSION = os.environ.get("AQGVNygApD2DypYqDvMp3Xg9oJwtHTou7DGyI_wcCZhV4NOasgQ1Y5PL9CTILDmSTc_VScI7sD6CazDiu7PgJdJzLB0pBpeC_Zr80UkyVJfMLloQi53f7mrJWXBdpjxMkuIBt7Sm9uepuinZGz_JTwiXFw9OIs_qLMcI5JJl2-ObvA3rnXyPCf75dqCl8RTIVxYMQ3A7Kp1AbGlR7q_nI7JPVwnx8Kw-rQkTavW5QEvgaDvgVyK_qrWdkcfTkLql-hRvUX5nJ1MeBH-oT0HerscJjxdDPjtN52br_B9lCblMwKzlC-Fnsg3nSzReqIhpEOMWqXVe710Rvc2hQ8pb0alHR0YF1wAAAAGP0sIxAA")
+    STRING_SESSION = os.environ.get("STRING_SESSION")
     # Forward From Chat ID
-    FORWARD_FROM_CHAT_ID = list(set(int(x) for x in os.environ.get("FORWARD_FROM_CHAT_ID", "-1002105476348").split()))
+    FORWARD_FROM_CHAT_ID = list(set(int(x) for x in os.environ.get("FORWARD_FROM_CHAT_ID", "-100").split()))
     # Forward To Chat ID
-    FORWARD_TO_CHAT_ID = list(set(int(x) for x in os.environ.get("FORWARD_TO_CHAT_ID", "-1002364591403").split()))
+    FORWARD_TO_CHAT_ID = list(set(int(x) for x in os.environ.get("FORWARD_TO_CHAT_ID", "-100").split()))
     # Filters for Forwards
     DEFAULT_FILTERS = "video document photo audio text gif forwarded poll sticker"
     FORWARD_FILTERS = list(set(x for x in os.environ.get("FORWARD_FILTERS", DEFAULT_FILTERS).split()))
